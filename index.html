@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet " href="css/styles.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<meta charset="ISO-8859-1">
+<title>Blood Donation Management</title>
+<link rel="shortcut icon" href="images/logo.png" type="image/jpg" sizes="16x16">
+</head>
+<body background="images/BackgroundB.jpg" >
+	<header id="myHeader">
+		<div class="topnav">
+		  <a class="active" href="home.jsp">Home</a>
+		  <a href="#about">About</a>
+		  <a href="#contact">Contact</a>
+		  
+		    <!-- <form action="searchblood.jsp" methop="POST">
+		    <!-- <button class="dropbtn">Dropdown 
+		      <i class="fa fa-caret-down"></i>
+		    </button>
+		    		<select class="dropdown" name="bloodgroup" required>
+							<option class="opt" color="black" value=O+ve>O+ve</option>
+							<option class="opt" value=A+ve>A+ve</option>
+							<option class="opt" value=B+ve>B+ve</option>
+							<option class="opt" value=AB+ve>AB+ve</option>
+							<option class="opt" value=O-ve>O-ve</option>
+							<option class="opt" value=A-ve>A-ve</option>
+							<option class="opt" value=B-ve>B-ve</option>
+							<option class="opt" value=AB-ve>AB-ve</option>
+					</select>
+			    
+		    </form> -->
+		  <div class="login-container">
+		   <form class="frm" action="search.jsp">
+		      <input type="text" id="srch" placeholder="Search Blood Group(ex.O+ve)" name="search" required>
+		      <button type="submit" ><i class="fa fa-search"></i></button>
+		    </form>
+		    <form class="frm" action="login.jsp" method="POST">
+		      <input type="text" placeholder="Username" name="username" required>
+		      <input type="password" placeholder="Password" name="password" required>
+		      <button type="submit">login</button>
+		    </form>
+		  </div>		  
+		      <a href="register.jsp" class="regbtn" >Register</a>
+		</div>
+	</header>
+	
+	
+	<script>
+		window.onscroll = function() {myFunction()};
+		
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+		
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+		    header.classList.add("sticky");
+		  } else {
+		    header.classList.remove("sticky");
+		  }
+		}
+	</script>
+	
+	<div class="slogan">
+	<img src="images/blood.png" class="img" width="40px" height="50px">	
+	<div id="tit" class="tit"><h1><!--  <img src="images/blood.png" class="logo" width="40px" height="40px">--> Blood Donation</h1></div>
+		<div id="bslog" class="slg">Save life</div>
+		<div id="slog1" class="sloganBox">“I have nothing to offer but blood, toil, tears and sweat” – Winston Churchill</div>
+		<div id="slog2" class="sloganBox">“To give blood you need neither extra strength nor extra food, and you will save a life.”</div>
+	</div>
+</body>
+</html>
